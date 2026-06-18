@@ -1,0 +1,214 @@
+/* NILAI PAGE */
+
+.nilai-wrapper {
+    padding: 24px;
+    background: #F4F4F6;
+    min-height: 100vh;
+}
+
+.nilai-title {
+    background: #D9C5FF;
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 28px;
+    align-items: end;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filter-item label {
+    font-size: 14px;
+}
+
+.filter-item select {
+    width: 290px;
+    height: 38px;
+    border-radius: 6px;
+    border: 1px solid #BDBDBD;
+    padding: 0 12px;
+}
+
+.apply-btn {
+    height: 38px;
+    padding: 0 24px;
+    border: none;
+    background: #D9C5FF;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.info-box {
+    background: #ECECEC;
+    padding: 14px;
+    margin-bottom: 24px;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.table-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.nilai-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1200px;
+}
+
+.nilai-table th {
+    background: #F3F3F3;
+    padding: 14px;
+    border: 1px solid #DADADA;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.nilai-table td {
+    padding: 14px;
+    border: 1px solid #E1E1E1;
+    font-size: 13px;
+}
+
+.nilai-table tbody tr:nth-child(even) {
+    background: #F8F5FF;
+}
+
+/* FIX NILAI PAGE AFTER SIDEBAR */
+.nilai-wrapper {
+    padding: 24px 48px;
+    background: #F4F4F6;
+    min-height: calc(100vh - 74px);
+}
+
+@media (max-width: 768px) {
+    .dashboard-main {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.dashboard-header h1 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+.nilai-wrapper {
+    padding: 24px 48px;
+    background: #F4F4F6;
+}
+
+.nilai-title {
+    height: 28px;
+    background: #D5C0FF;
+    border-radius: 4px;
+    padding: 5px 18px;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.filter-section {
+    display: grid;
+    grid-template-columns: 180px 430px;
+    row-gap: 14px;
+    column-gap: 28px;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.filter-item {
+    display: contents;
+}
+
+.filter-item label {
+    font-size: 14px;
+}
+
+.filter-item select {
+    width: 430px;
+    height: 30px;
+    border-radius: 5px;
+    background: #D9D9D9;
+    border: 1px solid #B5B5B5;
+    box-shadow: 0 2px 4px rgba(0,0,0,.25);
+}
+
+.apply-btn {
+    grid-column: 2;
+    width: 90px;
+    height: 34px;
+    justify-self: end;
+    background: #E2D2FF;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.info-box {
+    margin-top: 28px;
+    background: #E5E5E5;
+    padding: 12px;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.table-card {
+    margin-top: 22px;
+    background: transparent;
+    overflow-x: auto;
+}
+
+.nilai-table {
+    min-width: 1180px;
+    background: white;
+    border-collapse: collapse;
+}
+
+.nilai-table th,
+.nilai-table td {
+    border: 1px solid #CFCFCF;
+    padding: 11px 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nilai-table th {
+    background: #F3F3F3;
+    text-align: center;
+}
+
+.nilai-table tbody tr:nth-child(even) {
+    background: #F6F0FF;
+}
+
+.nilai-table tbody tr:nth-child(odd) {
+    background: #FFFFFF;
+}
+
+.nilai-plo-link {
+    display: inline-block;
+    color: #111827;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.nilai-plo-link:hover {
+    background: #D9C2FF;
+    color: #111827;
+}

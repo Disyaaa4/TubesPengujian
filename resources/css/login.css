@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Oxygen:wght@400;700&display=swap');
+
+:root {
+    --login-purple: #C2AEFB;
+    --login-circle: #A1A7FF;
+    --login-dark: #0F0F0F;
+    --login-bg: #7FF2EA;
+}
+
+html,
+body {
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.login-page {
+    min-height: 100vh;
+    height: 100%;
+    background: var(--login-bg);
+    padding: 0;
+    font-family: 'Oxygen', sans-serif;
+    display: flex;
+}
+
+.login-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    overflow: hidden;
+}
+
+.login-left {
+    position: relative;
+    padding: 48px 80px;
+    background: #ffffff;
+
+}
+
+.login-logo-group {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.login-logo {
+    width: 92px;
+    height: auto;
+    object-fit: contain;
+}
+
+.login-circle {
+    position: absolute;
+    background: var(--login-circle);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.login-circle-large {
+    width: 290px;
+    height: 290px;
+    left: 55px;
+    top: 190px;
+}
+
+.login-circle-small {
+    width: 125px;
+    height: 125px;
+    right: 230px;
+    bottom: 95px;
+}
+
+.login-brand {
+    position: relative;
+    z-index: 2;
+    margin-top: 260px;
+}
+
+.login-brand h1 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 96px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.login-brand h2 {
+    font-family: 'Overpass', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.4;
+    margin-top: 24px;
+}
+
+.login-right {
+    background: var(--login-purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 330px;
+}
+
+.login-box h3 {
+    font-size: 28px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.login-box h1 {
+    font-size: 54px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 80px;
+}
+
+.login-page .form-label {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.login-page .form-control {
+    height: 40px;
+    border: 3px solid rgba(0,0,0,0.75);
+    border-radius: 8px;
+    background: rgba(255,255,255,0.35);
+}
+
+.login-page .form-control:focus {
+    border-color: #000;
+    box-shadow: 0 0 10px rgba(161, 167, 255, 0.5);
+}
+
+.login-button {
+    background: #050505;
+    color: #fff;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 8px;
+}
+
+.login-button:hover {
+    background: #222;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 992px) {
+    .login-card {
+        grid-template-columns: 1fr;
+    }
+
+    .login-left {
+        min-height: 420px;
+        padding: 32px;
+    }
+
+    .login-brand {
+        margin-top: 120px;
+    }
+
+    .login-brand h1 {
+        font-size: 56px;
+    }
+
+    .login-brand h2 {
+        font-size: 18px;
+    }
+
+    .login-circle-large {
+        width: 180px;
+        height: 180px;
+        top: 130px;
+        left: 30px;
+    }
+
+    .login-circle-small {
+        display: none;
+    }
+
+    .login-right {
+        padding: 40px 24px;
+    }
+
+    .login-box h1 {
+        margin-bottom: 40px;
+    }
+}
+
+.login-button {
+    display: block !important;
+    width: 100% !important;
+    background: #050505 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 12px !important;
+    margin-top: 28px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+}
+
+.login-input-group {
+    position: relative;
+}
+
+.login-input-group .login-input {
+    padding-right: 48px;
+}
+
+.login-icon {
+    position: absolute;
+    top: 50%;
+    right: -42px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    display: block;
+}
+
+.circle-large,
+.login-circle-large {
+    width: 270px;
+    height: 270px;
+    left: 70px;
+    top: 170px;
+    background: #999DF7;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.circle-small,
+.login-circle-small {
+    width: 125px;
+    height: 125px;
+    right: 260px;
+    bottom: 110px;
+    background: #999DF7;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.login-brand {
+    z-index: 2;
+}
+
+FIX FULLSCREEN LOGIN
+body:has(.login-page) {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+
+body:has(.login-page) .compass-wrapper,
+body:has(.login-page) .compass-main,
+body:has(.login-page) .compass-content {
+    width: 100vw !important;
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+}
+
+.login-page {
+    width: 100vw !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    padding: 0px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+/*untuk error message*/
+.login-error-message {
+    color: #D70303;
+    text-shadow: 0 4px 3px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #1B1B18;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 28px 0 16px;
+    text-align: left;
+}

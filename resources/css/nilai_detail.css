@@ -1,0 +1,204 @@
+/* DETAIL NILAI PLO / CLO / ASSESSMENT TOOLS */
+
+.detail-nilai-wrapper {
+    padding: 18px 48px 60px;
+    background: #F4F4F6;
+    min-height: calc(100vh - 74px);
+}
+
+.nilai-title {
+    background: #D5C0FF;
+    border-radius: 4px;
+    padding: 8px 18px;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.detail-card {
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 0 28px 80px;
+}
+
+.student-row {
+    padding: 14px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #222;
+}
+
+.plo-info {
+    padding: 16px 28px 12px;
+    border-bottom: 1px solid #222;
+}
+
+.plo-info h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.plo-info p {
+    font-size: 14px;
+    line-height: 1.25;
+    margin: 0;
+}
+
+.detail-card h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 12px 0 4px;
+}
+
+.record-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 11px;
+}
+
+.record-box {
+    width: 34px;
+    height: 22px;
+    display: inline-block;
+    border: 1px solid #888;
+    background: #E5E5E5;
+}
+
+.detail-table-wrap {
+    overflow-x: auto;
+}
+
+.detail-table {
+    width: 100%;
+    min-width: 1000px;
+    border-collapse: collapse;
+}
+
+.detail-table th,
+.detail-table td {
+    border: 1px solid #CFCFCF;
+    padding: 12px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.detail-table th {
+    background: #F3F3F3;
+    text-align: center;
+}
+
+.detail-table td {
+    background: #ffffff;
+}
+
+.detail-table tbody tr:nth-child(even):not(.clo-row) td {
+    background: #F5F5F5;
+}
+
+.mk-row {
+    cursor: pointer;
+}
+
+.mk-row:hover td {
+    background: #F0EBFF;
+}
+
+.clo-row {
+    display: none;
+}
+
+.clo-row.show {
+    display: table-row;
+}
+
+.clo-row td {
+    padding: 0 !important;
+    background: #ffffff !important;
+}
+
+/* CLO + Assessment Tools */
+.clo-cell {
+    padding: 0 !important;
+    background: #ffffff !important;
+}
+
+.clo-block {
+    border-bottom: 1px solid #CFCFCF;
+}
+
+.clo-line {
+    padding: 8px 12px;
+    background: #F1F1F1;
+    border-bottom: 1px solid #CFCFCF;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.clo-line:hover {
+    background: #E9DFFF;
+}
+
+.assessment-tools {
+    display: none;
+    padding: 10px 14px 14px;
+    background: #ffffff;
+    grid-template-columns: minmax(220px, 1fr) minmax(220px, 1fr);
+    gap: 0px 10px;
+    max-width: 500px;
+}
+
+.assessment-tools.show {
+    display: grid;
+}
+
+.assessment-tools div {
+    height: 24px;
+    border: 1px solid #D0D0D0;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.assessment-tools span {
+    float: right;
+}
+
+@media (max-width: 768px) {
+    .detail-nilai-wrapper {
+        padding: 16px;
+    }
+
+    .detail-card {
+        padding: 0 16px 40px;
+    }
+
+    .plo-info {
+        padding: 14px 0;
+    }
+
+    .assessment-tools {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .assessment-tools.show {
+        display: grid;
+    }
+}
+
+.clo-row td {
+    padding: 0 !important;
+    background: #fff !important;
+}
+
+.clo-block {
+    margin: 0;
+}
+
+.assessment-tools {
+    margin-left: 18px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
