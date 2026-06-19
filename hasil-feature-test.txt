@@ -1,0 +1,73 @@
+~~TEST HALAMAN LOGIN BISA DIAKSES
+
+Asus@Disyaa MINGW64 /d/TELKOM UNIVERSITY/6th Semester/Pengujian dan implementasi/tubes_rama/TubesPengujian (main)
+$ php artisan test tests/Feature/DosWalFeatureTest.p
+hp --filter="halaman login bisa diakses"
+
+   PASS  Tests\Feature\DosWalFeatureTest
+  ✓ halaman login bisa diakses oleh guest    0.33s
+
+  Tests:    1 passed (2 assertions)
+  Duration: 0.71s
+
+
+~~TEST GUEST TIDAK DAPAT MENGAKSES DASHBOARD DOSEN WALI
+
+Asus@Disyaa MINGW64 /d/TELKOM UNIVERSITY/6th Semester/Pengujian dan implementasi/tubes_rama/TubesPengujian (main)
+$ php artisan test tests/Feature/DosWalFeatureTest.php --filter="guest tidak dapat mengakses dashboard dosen wali"
+
+   PASS  Tests\Feature\DosWalFeatureTest
+  ✓ guest tidak dapat mengakses dashboard dosen wali                                                                                                                                                        0.22s
+
+  Tests:    1 passed (2 assertions)
+  Duration: 0.45s
+
+~~TEST DOSEN WALI SIMPAN NILAI
+Asus@Disyaa MINGW64 /d/TELKOM UNIVERSITY/6th Semester/Pengujian dan implementasi/tubes_rama/TubesPengujian (main)
+$ php artisan test tests/Feature/DosWalFeatureTest.php --filter="dosen wali dapat menyimpan nilai valid mahasiswa"
+
+   PASS  Tests\Feature\DosWalFeatureTest
+  ✓ dosen wali dapat menyimpan nilai valid mahasiswa                                0.37s
+
+  Tests:    1 passed (3 assertions)
+  Duration: 0.61s
+
+
+~~TEST LOGIN GAGAL JIKA PAW SALAH
+Asus@Disyaa MINGW64 /d/TELKOM UNIVERSITY/6th Semester/Pengujian dan implementasi/tubes_rama/TubesPengujian (main)
+$ php artisan test tests/Feature/DosWalFeatureTest.php --filter="login gagal jika password salah"
+
+   PASS  Tests\Feature\DosWalFeatureTest
+  ✓ login gagal jika password salah                                                 0.42s
+
+  Tests:    1 passed (3 assertions)
+  Duration: 0.60s
+
+  ~~TEST DOSEN WALI DAPAT LOGIN
+  Asus@Disyaa MINGW64 /d/TELKOM UNIVERSITY/6th Semester/Pengujian dan implementasi/tubes_rama/TubesPengujian (main)
+$ php artisan test tests/Feature/DosWalFeatureTest.php --filter="dosen wali dapat login dan diarahkan ke dashboard"
+
+   PASS  Tests\Feature\DosWalFeatureTest
+  ✓ dosen wali dapat login dan diarahkan ke dashboard                               0.41s
+
+  Tests:    1 passed (3 assertions)
+  Duration: 0.60s
+
+
+php artisan config:clear
+php artisan cache:clear
+composer dump-autoload
+
+php artisan test tests/Feature/DosWalFeatureTest.php --filter="halaman login bisa diakses oleh guest"
+
+php artisan test tests/Feature/DosWalFeatureTest.php --filter="login gagal jika password salah"
+
+php artisan test tests/Feature/DosWalFeatureTest.php --filter="dosen wali dapat login dan diarahkan ke dashboard"
+
+php artisan test tests/Feature/DosWalFeatureTest.php --filter="guest tidak dapat mengakses dashboard dosen wali"
+
+php artisan test tests/Feature/DosWalFeatureTest.php --filter="dosen wali dapat membuka form input nilai mahasiswa perwalian"
+
+php artisan test tests/Feature/DosWalFeatureTest.php --filter="dosen wali dapat menyimpan nilai valid mahasiswa"
+
+php artisan test tests/Feature/DosWalFeatureTest.php
